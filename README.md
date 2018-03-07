@@ -22,7 +22,7 @@ Within the `scripts` folder, there are options to characterize on Linux or Windo
 * **count_updated_10_31_17.py**: This script calculates the interactions common to a majority of representative structures in a cluster, and outputs the data as percentages in the terminal and exports the data to respective text files.
 
 ### Installation
-1. Ensure you have [Python v2.7](https://www.python.org/downloads/), (Python 3 is not supported), [Biopython](https://www.github.com/biopython/biopython/), and [DSSR](http://forum.x3dna.org/site-announcements/download-instructions/).
+1. Ensure you have [Python v2.7](https://www.python.org/downloads/), (Python 3 is not supported), [Biopython](https://www.github.com/biopython/biopython/), and [DSSR](http://forum.x3dna.org/site-announcements/download-instructions/), (executable file).
 2. Clone or download this repository.
 3. Copy `matrix.py` from the this repository's `biopython_mods` folder and replace `Bio/motifs/matrix.py` in your Biopython working directory.  This modification adds a 'U' to the degenerate dictionary, which is required for RMSD_Tree_Folders.py to run, but does not affect any other functionality of the original Biopython file.
 
