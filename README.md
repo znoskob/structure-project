@@ -11,7 +11,7 @@ The following scripts are included, in the `scripts` folder:
 * **RMSD_Tree_Folders.py**: This script calculates an UPGMA tree from the RMSD values of the sequence-representative structures.  The degenerate sequence is determined at each inner node on the tree.  The user is prompted to supply an RMSD cut-off and the script creates folders containing sequence-representative structures that have branch-length values within the RMSD cut-off.
 * **Avg_Structure-cluster.py**: This script calculates an average structure for the sequence-representative structures in the selected folder and then calculates an RMSD of each structure to the average structure using all atoms from the backbone and three atoms from each base.  The structure with the smallest RMSD is selected as the cluster-representative structure.
 
-Within the `scripts` folder, there are options to characterize on Linux or Windows operating systems. The follosing scripts are included in the `Characterization` folders:
+Within the `scripts` folder, there are options to characterize on Linux or Windows operating systems. The following scripts are included in the `Characterization` folders:
 * **dssr.sh**: This script runs DSSR on all PDB files in a given directory and exports all data to a merged .JSON file.
 * **json_stacks_10_31_17.py**: This script parses the JSON file for stacking information and exports the data to a text file.
 * **json_conf_pucker.py**: This script parses the JSON file for base conformation and sugar pucker information and exports the data to a text file.
