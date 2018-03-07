@@ -23,4 +23,4 @@ Refer to instructions.pdf (coming soon!) for instructions on how to run the scri
 Pull requests are always welcome!
 
 ### License
-See the [LICENSE](license.md) file for licensing information. 
+See the [LICENSE](LICENSE.md) file for licensing information. 
