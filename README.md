@@ -27,7 +27,7 @@ Within the `scripts` folder, there are options to characterize on Linux or Windo
 3. Copy `matrix.py` from the this repository's `biopython_mods` folder and replace `Bio/motifs/matrix.py` in your Biopython working directory.  This modification adds a 'U' to the degenerate dictionary, which is required for RMSD_Tree_Folders.py to run, but does not affect any other functionality of the original Biopython file.
 
 ### Running the Scripts
-Refer to instructions.pdf (coming soon!) for instructions on how to run the scripts.
+Refer to Instructions.pdf for instructions on how to run the scripts.
 
 ### Collaboration
 Pull requests are always welcome!
