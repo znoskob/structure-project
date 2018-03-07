@@ -1,6 +1,6 @@
 # structure-project
 ### Introduction
-This project contains scripts to run an automated protocol for searching the [CoSSMos](http://cossmos.slu.edu) database for 3D structural patterns among secondary structures using the Python programming language.
+This project contains scripts to run an automated protocol for searching the [RNA CoSSMos](http://cossmos.slu.edu) database for 3D structural patterns among tetraloops using the Python programming language.
 
 ### Files
 The following scripts are included, in the `scripts` folder:
