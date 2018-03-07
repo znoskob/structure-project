@@ -11,6 +11,16 @@ The following scripts are included, in the `scripts` folder:
 * **RMSD_Tree_Folders.py**: This script calculates an UPGMA tree from the RMSD values of the sequence-representative structures.  The degenerate sequence is determined at each inner node on the tree.  The user is prompted to supply an RMSD cut-off and the script creates folders containing sequence-representative structures that have branch-length values within the RMSD cut-off.
 * **Avg_Structure-cluster.py**: This script calculates an average structure for the sequence-representative structures in the selected folder and then calculates an RMSD of each structure to the average structure using all atoms from the backbone and three atoms from each base.  The structure with the smallest RMSD is selected as the cluster-representative structure.
 
+Within the `scripts` folder, there are options to characterize on Linux or Windows operating systems. The follosing scripts are included in the `Characterization` folders:
+* **dssr.sh**: This script runs DSSR on all PDB files in a given directory and exports all data to a merged .JSON file.
+* **json_stacks_10_31_17.py**: This script parses the JSON file for stacking information and exports the data to a text file.
+* **json_conf_pucker.py**: This script parses the JSON file for base conformation and sugar pucker information and exports the data to a text file.
+* **json_hbond.py**: This script parses the JSON file for hydrogen bond information (non pairing) and exports the data to a text file.
+* **json_bp.py**: This script parses the JSON file for base pairing information and exports the data to a text file.
+* **json_detailedbp_5_26.py**: This script parses the JSON file for pairing hydrogen bond information and exports the data to a text file.
+* **create.py**: This script converts all text files to .CSV files for easier analysis.
+* **count_updated_10_31_17.py**: This script calculates the interactions common to a majority of representative structures in a cluster, and outputs the data as percentages in the terminal and exports the data to respective text files.
+
 ### Installation
 1. Ensure you have [Python v2.7](https://www.python.org/downloads/) (Python 3 is not supported) and [Biopython](https://www.github.com/biopython/biopython).
 2. Clone or download this repository.
