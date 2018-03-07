@@ -4,12 +4,12 @@ This project contains scripts to run an automated protocol for searching the [Co
 
 ### Files
 The following scripts are included, in the `scripts` folder:
-* **clip.py**: description coming soon!
-* **check_files.py**: description coming soon!
-* **Avg_Structure.py**: description coming soon!
-* **RMSD.py**: description coming soon!
-* **RMSD_Tree_Folders.py**: description coming soon!
-* **Avg_Structure-cluster.py**: description coming soon!
+* **clip.py**: This script uses the RNA CoSSMos search results file as input and downloads the corresponding .pdb files.  Then each result is clipped from the .pdb file and renumbered.  H atom coordinates are removed from the clipped .pdb files.
+* **check_files.py**: This script performs a quality check on the clipped .pdb files. If clipped .pdb files are empty, missing atom coordinates, or contain multiple coordinate sets for the same atom, the files are flagged and moved to the "bad_clips" folder.
+* **Avg_Structure.py**: This script calculates an average structure for each unique sequence (including closing base pairs) and then calculates an all-atom RMSD of each structure to the average structure.  The structure with the smallest RMSD is selected as the sequence-representative structure.
+* **RMSD.py**: This script calculates all-against-all RMSD values for all of the sequence-representative structures. The RMSD is calculated using all atoms in the sugar-phosphate backbone and three atoms from each base (N9, C8, and C4 for purines or N1, C2, and C6 for pyrimidines).
+* **RMSD_Tree_Folders.py**: This script calculates an UPGMA tree from the RMSD values of the sequence-representative structures.  The degenerate sequence is determined at each inner node on the tree.  The user is prompted to supply an RMSD cut-off and the script creates folders containing sequence-representative structures that have branch-length values within the RMSD cut-off.
+* **Avg_Structure-cluster.py**: This script calculates an average structure for the sequence-representative structures in the selected folder and then calculates an RMSD of each structure to the average structure using all atoms from the backbone and three atoms from each base.  The structure with the smallest RMSD is selected as the cluster-representative structure.
 
 ### Installation
 1. Ensure you have [Python v2.7](https://www.python.org/downloads/) (Python 3 is not supported) and [Biopython](https://www.github.com/biopython/biopython).
